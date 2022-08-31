@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Carros from './components/Carros';
+import Carros1 from './components/Carros1';
+import Componente1 from './components/Componente1';
+import Componente2 from './components/Componente2';
+import ExcState from './components/excState';
+import Semaforo from './components/Semaforo';
+import State from './components/State';
+import TesteState from './components/TesteState';
+import TesteStateFilho from './components/TesteStateFilho';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return(
+    <Semaforo/>
+  )
+ 
+  
 }
 
 export default App;
